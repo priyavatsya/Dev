@@ -1,0 +1,1 @@
+node tpp.js untreefy "C:\Users\GRAZEL\Desktop\GIT\Development\Lecture_3_JS_03_06_2020\raw\d10" "C:\Users\GRAZEL\Desktop\GIT\Development\Lecture_3_JS_03_06_2020\raw\xyz"
