@@ -1,7 +1,8 @@
+#!/usr/bin/env node
 let fs = require("fs");
 let path = require("path");
 let utility = require("./utility");
-
+    
 function checkWhether(src){
     return fs.lstatSync(src).isFile()
 }
@@ -44,7 +45,6 @@ function getCategory(ext){
 }
 
 function organizer(src,dest){
-    //checkWhether file or directory
 
     if(checkWhether(src) == true){
 
@@ -62,7 +62,7 @@ function organizer(src,dest){
     }
 
     else{
-        let childNames = getCOntent(src);
+        let childNames = getContent(src);
 
         for(let i=0;i<childNames.length;i++){
             if(childNames[i] == "organized_files")
@@ -76,11 +76,13 @@ function organizer(src,dest){
     }
 }
 
+
 let src = process.argv[2];
 let dest = path.join(src,"organized_files");
 if(fs.existsSync(dest) == false)
 {
     fs.mkdirSync(dest);
 }
+
 
 organizer(src,dest);
