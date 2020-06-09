@@ -1,0 +1,12 @@
+1. npm init -y ---> creates package.json
+
+2. create object bin -----> define command
+            "name" : files path
+ex -  "bin":{
+    "organizer":"node ./lect_4/activity/organizer.js"
+  },
+  use relative path in bin
+  
+ 3. include shebang syntax in source file
+
+ 4. npm link ---> to make it globally available 

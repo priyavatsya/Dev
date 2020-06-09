@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "development",
   "version": "1.0.0",
@@ -26,3 +27,32 @@
   },
   "homepage": "https://github.com/G-r-a-z-e-l/Dev#readme"
 }
+||||||| merged common ancestors
+=======
+{
+  "name": "development",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "uniqid": "^5.2.0"
+  },
+  "bin": {
+    "manager": "lect_4\\activity\\organizer.js"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G-r-a-z-e-l/Dev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/G-r-a-z-e-l/Dev/issues"
+  },
+  "homepage": "https://github.com/G-r-a-z-e-l/Dev#readme"
+}
+>>>>>>> 1db7e9ca2b5f7df09aff8ce635e20abdd041b6cb
