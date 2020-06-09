@@ -5,6 +5,15 @@ let helpFile = require("./commands/help");
 // [node ,tpp.js ,view ,src ,-t]
 // node tpp.js view src -f
 let cmd = input[0];
+console.log(cmd)
+console.log(process.argv[1]);
+console.log("------------")
+
+console.log(process.argv[2]);
+
+console.log(process.argv[3]);
+
+console.log(process.argv[4]);
 switch (cmd) {
     case "view":
         viewFile.view(process.argv[3], process.argv[4])
