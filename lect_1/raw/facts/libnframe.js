@@ -8,6 +8,8 @@ function lib(data) {
     }
     return true
 }
+
+
 // Developer code 
 // console.log("Number is prime? " + lib(21));
 // console.log("Number is prime? " + lib(23));
@@ -35,6 +37,7 @@ function fcb() {
     exec('calc').unref();
     // calculator
 }
+
 framework(21, scb, fcb);
 framework(23, scb, fcb);
 

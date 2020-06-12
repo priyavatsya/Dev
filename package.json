@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "name": "development",
   "version": "1.0.0",
@@ -6,7 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
+    "chromedriver": "^83.0.0",
     "request": "^2.88.2",
+    "selenium-webdriver": "^4.0.0-alpha.7",
     "uniqid": "^5.2.0"
   },
   "bin": {
@@ -27,32 +28,3 @@
   },
   "homepage": "https://github.com/G-r-a-z-e-l/Dev#readme"
 }
-||||||| merged common ancestors
-=======
-{
-  "name": "development",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "uniqid": "^5.2.0"
-  },
-  "bin": {
-    "manager": "lect_4\\activity\\organizer.js"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/G-r-a-z-e-l/Dev.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/G-r-a-z-e-l/Dev/issues"
-  },
-  "homepage": "https://github.com/G-r-a-z-e-l/Dev#readme"
-}
->>>>>>> 1db7e9ca2b5f7df09aff8ce635e20abdd041b6cb

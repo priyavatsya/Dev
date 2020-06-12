@@ -1,3 +1,5 @@
+
+
 let input = process.argv.slice(2);
 let viewFile = require("./commands/view");
 let helpFile = require("./commands/help");

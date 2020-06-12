@@ -16,6 +16,7 @@
 
 // assignment=>value of one variable could assigned to another varibale 
 // assignment=>address of a function could assigned to another varibale 
+
 let a = [1,2,3,4]
 let b = a;
 console.log(b);
@@ -36,7 +37,8 @@ function greeter(param) {
 greeter(function innerfn() {
     console.log("I am passed as a parameter");
     let a = 10;
-    console.log(++a);
+    console.log(a++);
+    console.log(a);
 })
 
 // greeter("dsfbdmjhsv");
