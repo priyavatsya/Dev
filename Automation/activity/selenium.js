@@ -67,11 +67,55 @@ then(function () {
     console.log("Entered in warmup");
 })
 .then(function () {
-    let challenge1
+     let challenge1 = tab.findElement(smd.By.css("a[data-attr1 = 'sock-merchant']"));
+     return challenge1;
+ })
+.then(function (clickChallenge) {
+    let challenge = clickChallenge.click();
+    return challenge;
+})
+.then(function () {
+    console.log("Entered challenge 1");
+})
+.then(function () {
+    let editorial = tab.findElement("a[data-attr2 = 'editorial']")
 })
 .catch(function (err) {
     console.log(err);
 })
 
 
-function questionSolver()
+function questionSolver() {
+
+    return new Promise(function (resolve, reject) {
+        // logic to solve a question
+        let allCBTnWSP = tab.findElements(swd.By.css(".challenge-submit-btn"));
+        allCBTnWSP.then(function (cBtnArr) {
+            let cBtnWillBeClickedP = cBtnArr[0].click();
+            return cBtnWillBeClickedP;
+        }).then(function () {
+
+            resolve();
+        }).catch(function (err) {
+            reject();
+        })
+    })
+}
+
+
+function handleLockBtn(){
+    return new Promise(function (resolve,reject){
+        let lockBtnWillBeFP = tab.findElement(smd.By.css("."))
+        
+    })
+}
+function copyCode(){
+
+}
+
+function pasteCode(code){
+    return new Promise(function (resolve,reject){
+    
+    })
+
+}
