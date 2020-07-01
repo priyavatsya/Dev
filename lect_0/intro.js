@@ -6,6 +6,7 @@ varName = "I am a string";
 
 console.log(varName);
 let number = 23
+
 for(let i = number;i*i<=number;i++)
 {
     if(number%i==0)
@@ -14,3 +15,4 @@ for(let i = number;i*i<=number;i++)
         return;
     }
 }
+

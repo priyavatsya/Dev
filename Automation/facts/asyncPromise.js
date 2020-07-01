@@ -5,7 +5,7 @@ let readFilePromise = fs.promises.readFile("f1.txt");
 
 readFilePromise.then(function (data){
     console.log("inside then");
-    consosle.log("Content "+ data);
+    console.log("Content "+ data);
 
 })
 

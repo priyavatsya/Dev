@@ -24,16 +24,21 @@ let fnkaRef = function greeter() {
     console.log("Coz fns are variable");
     return 20;
 }
-console.log(fnkaRef);
-console.log(fnkaRef())
+
+// console.log(fnkaRef);
+// console.log(fnkaRef())
+
 //variables can be passed as a parameter
 // functions can also be passed as a parameter
+
 function greeter(param) {
     console.log("Inside greeter");
     console.log(param);
-    param()
+    param();
 }
-// greeter(10);
+
+//greeter(10);
+
 greeter(function innerfn() {
     console.log("I am passed as a parameter");
     let a = 10;

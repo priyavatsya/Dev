@@ -85,37 +85,37 @@ then(function () {
 })
 
 
-function questionSolver() {
+// function questionSolver() {
 
-    return new Promise(function (resolve, reject) {
-        // logic to solve a question
-        let allCBTnWSP = tab.findElements(swd.By.css(".challenge-submit-btn"));
-        allCBTnWSP.then(function (cBtnArr) {
-            let cBtnWillBeClickedP = cBtnArr[0].click();
-            return cBtnWillBeClickedP;
-        }).then(function () {
+//     return new Promise(function (resolve, reject) {
+//         // logic to solve a question
+//         let allCBTnWSP = tab.findElements(swd.By.css(".challenge-submit-btn"));
+//         allCBTnWSP.then(function (cBtnArr) {
+//             let cBtnWillBeClickedP = cBtnArr[0].click();
+//             return cBtnWillBeClickedP;
+//         }).then(function () {
 
-            resolve();
-        }).catch(function (err) {
-            reject();
-        })
-    })
-}
+//             resolve();
+//         }).catch(function (err) {
+//             reject();
+//         })
+//     })
+// }
 
 
-function handleLockBtn(){
-    return new Promise(function (resolve,reject){
-        let lockBtnWillBeFP = tab.findElement(smd.By.css("."))
+// function handleLockBtn(){
+//     return new Promise(function (resolve,reject){
+//         let lockBtnWillBeFP = tab.findElement(smd.By.css("."))
         
-    })
-}
-function copyCode(){
+//     })
+// }
+// function copyCode(){
 
-}
+// }
 
-function pasteCode(code){
-    return new Promise(function (resolve,reject){
+// function pasteCode(code){
+//     return new Promise(function (resolve,reject){
     
-    })
+//     })
 
-}
+// }

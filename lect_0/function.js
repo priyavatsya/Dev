@@ -24,6 +24,5 @@ console.log(fnKaRef());
 function great(){
     console.log("because functions are variables");
     return 10;
-}
-
+    
 

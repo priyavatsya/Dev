@@ -12,13 +12,14 @@ module.exports.view = function () {
         viewAsFlatFiles(src, path.basename(src));
     }
 }
-// ??
+
 function checkWhetherFile(src) {
     return fs.lstatSync(src).isFile()
 }
 function getContent(src) {
     return fs.readdirSync(src);
 }
+
 function viewAsFlatFiles(src, toprint) {
     // checkwhether file or directory
     if (checkWhetherFile(src) == true) {
@@ -37,6 +38,8 @@ function viewAsFlatFiles(src, toprint) {
         }
     }
 }
+
+
 function viewAsTree(src, indent) {
     // checkwhether file or directory
     if (checkWhetherFile(src) == true) {
