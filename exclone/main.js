@@ -2,6 +2,13 @@
 //npn install electron --save-dev
 const electron = require('electron');
 const app = electron.app;
+const ejs = require("ejs-electron");
+
+ejs.data({
+  "title": "Excel-1",
+  "rows": 100,
+  "cols":26
+})
 
 function createWindow(){
     const win  = new electron.BrowserWindow({
@@ -13,7 +20,7 @@ function createWindow(){
         }
     })
 
-    win.loadFile('index.html').then(function () {
+    win.loadFile('index.ejs').then(function () {
         win.maximize();
         win.show();
         win.removeMenu();
