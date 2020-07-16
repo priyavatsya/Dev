@@ -13,37 +13,44 @@
 
     <div class="menu">Menu</div>
     <div class="menu-options">Menu Options</div>
-    <div class="formulaBar">Formula
-        <input type="text" id="text-input" class="text-container ib">
-        <input type="text" id="formula-input" class="formula-container "></div>
-    <div class="cell-container">
-        <div id="top-left-cell"></div>
-        <div id="top-row">
-            <%for(let i=0;i<cols;i++){%>
+    <div class="formula-container">
+        Formula
+        <input type="text" readonly="true" id="address-input">
+        <input type="text" id="formula-input">
+    </div>
+    
+    <div class="content-container">
+        <div id="top-left-cell" class="top-left-cell"></div>
+        
+        <div id="top-row" class="top-row">
+            <%for(let j=0;j<cols;j++){%>
             <div class="cell">
-                <%=String.fromCharCode(i+65)%>
+                <%= String.fromCharCode(j+65) %>
             </div>
             <%}%>
         </div>
-        <div id="left-col">
+
+        <div id="left-col" class = "left-col">
             <%for(let j=1;j<=rows;j++){%>
-            <div class="cell">
-                <%=j%>
+            <div class="cell" contenteditable="true">
+                <%= j %>
             </div>
             <%}%>
         </div>
-        <div id="grid">
+        
+        <div id="grid" class = "grid">
             <% for(let i=0;i<rows;i++) { %>
                 <div class = "row">
                     <% for(let j=0;j<cols;j++){ %>
-                        <div class = "cell" contenteditable="true" row-id=<%=i%> col-id=<%=j%>></div>
+                        <div class = "cell" contenteditable="true" r-id=<%=i%> c-id=<%=j%>> 
+                        </div>
                         <%}%>
                 </div>
                 <% } %>
         </div>
-    </div>
-    <div class="sheets">
-        <script type="text/javascript" src="script.js"></script>
+    
+    <div class="sheets-container">Sheets</div>
+        <script src="script.js"></script>
     </div>
 </body>
 
