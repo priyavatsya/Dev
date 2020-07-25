@@ -15,6 +15,54 @@
 </head>
 <body>
     <script type = "text/javascript">
+    //game config => configuration
+    const config = {
+        //gaming engine => WebGl, Canvas
+        // WEBGL => Pure Gaming Engine
+        // Canvas => draw anything in browser
+
+        type : Phaser.AUTO,
+        width: 800,
+        height : 600,
+        physics: {
+            default: "arcade",
+            gravity: { y:300 }
+        }, scene : {
+
+            preload: preload,
+            
+            create: setup,
+            
+            update : update
+        }
+    }
+    let platform,player;
+    function preload() {
+        this.load.image("hell", "assets/hell.jpg");
+        this.load.image("platform", "assets/platform.jpg");
+
+        // this.load.spritesheet("player", "assests/player.jpg", {
+        //     frameWidth: 32,
+        //     frameHeight: 48
+        // });
+
+    }
+
+    function setup() {
+        this.add.image(400,300,"hell");
+
+        platform = this.physics.add.staticGroup();
+
+        platform.create(400, 550, "platform").setScale(2).refreshBody();
+        platform.create(50, 250, "platform");
+        platform.create(750, 150, "platform");
+
+    }
+
+    function update() {
+
+    }
+    new Phaser.Game(config);
     </script>
     
 </body>
